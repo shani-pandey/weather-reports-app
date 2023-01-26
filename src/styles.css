@@ -1,1 +1,335 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.9s;
+}
+
+body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+       
+        color: #777777;
+        font-weight: 400;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        
+    line-height: 1.5;
+}
+
+input,select,textarea {
+    font-size: 16px;
+    color: #555;
+}
+
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+:focus {
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #337ab7;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+:focus,a,button,input,textarea,span,em {
+    outline: none!important;
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+strong {
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    line-height: normal;
+    line-height: 1.3;
+    color: #0d1820;
+}
+
+p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1140px;
+    }
+    .container-full {
+        width: 100%;padding: 0 15px;
+    }
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.my-col-1 {
+    width: 8.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-2 {
+    width: 16.6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-3 {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-4 {
+    width: 33.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-5 {
+    width: 41.6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-6 {
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-7 {
+    width: 58.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-8 {
+    width: 66.6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-9 {
+    width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-10 {
+    width: 83.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-11 {
+    width: 91.6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.my-col-12 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+
+
+
+.weatherDetailsBox {
+    width: 45%;
+    padding: 25px;
+    background: #2d93a1;
+    color: #fff;
+    position: relative;
+  }
+  
+  .weatherDetailsBox:after {
+    content: "";
+    width: 42%;
+    height: 100%;
+    background: #3e99a6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .weatherDetailsBox .my-col-5 {
+    z-index: 9;
+  }
+  .weatherDetailsBox .cAndF {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .weatherDetailsBox .cel h1 {
+    color: #fff;
+    font-size: 71px;
+    font-weight: 100;
+    font-family: system-ui;
+  }
+  
+  .weatherDetailsBox .dateAndTime h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 10px 0;
+  }
+  
+  .weatherDetailsBox ul {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0;
+  }
+  
+  .weatherDetailsBox ul li {
+    font-size: 10px;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+  }
+  
+  .weatherDetailsBox ul li span {
+    margin: 0 10px;
+  }
+  
+  .weatherDetailsBox ul li img {
+    max-height: 15px;
+  }
+  
+  .topShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .weatherDetailsBox .cityT p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weatherDetailsBox .cityT p img {
+    margin: 0 8px 0 0;
+  }
+  
+  .weatherDetailsBox .topShow button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    color: #ffff;
+    background: #72bac4;
+  }
+  
+  .weatherDetailsBox .sunSetting {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+  }
+  
+  .weatherDetailsBox .sunB h6 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+  
+  .weatherDetailsBox .sBox {
+    width: 60px;
+  
+    height: 120px;
+  
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .weatherDetailsBox .timein {
+    font-size: 12px;
+  }
+  
+  .weatherDetailsBox .watch {
+    padding: 13px 0;
+  }
+  
+  .act button {
+    border: 0;
+    background: #6eb2bc00;
+    color: #fff;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .act {
+    background: #4ea4b0;
+    border-radius: 15px;
+  }
+  
+  .act button:disabled {
+    background: #9cccd2;
+    border-radius: 15px;
+  }
+  
+ 
+  

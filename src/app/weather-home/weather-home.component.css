@@ -1,0 +1,270 @@
+header {
+    height: 80px;
+    background: #2d93a1;
+  }
+  
+  .cityListArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+  }
+  
+  .cityListArea .cityListBlock {
+    background: #dff1f3;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .popupArea {
+    background: #dff1f3;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newCityAddBox {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .newCityAddBox .boxTilte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 40px;
+  }
+  
+  .newCityAddBox .boxTilte h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .newCityAddBox .boxTilte button {
+    background: #ffabd480;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    color: #c2156a;
+  }
+  
+  .boxBody input {
+    width: 100%;
+    background: #e0e7ed;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  
+  .actionBox {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0;
+  }
+  
+  .actionBox button {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0 5px;
+    color: #2d93a1;
+    font-size: 14px;
+    border: 1px solid #2d93a1;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .actionBox button.save,
+  .actionBox button.close:hover {
+    color: #ffffff;
+    border: 1px solid #2d93a1;
+    background: #2d93a1;
+  }
+  .actionBox button.save:hover {
+    color: #2d93a1;
+    border: 1px solid #2d93a1;
+    background: #2d93a100;
+  }
+  
+  .cityListBlock .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cityListBlock .title h4 {
+    width: 25%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .cityListBlock .title .rightSearch {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .cityListBlock .searchInput input {
+    width: 100%;
+    background: #ffffff;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    min-width: 250px;
+  }
+  
+  .cityListBlock .searchInput {
+    position: relative;
+  }
+  
+  .cityListBlock .searchInput span {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    opacity: 0.8;
+    font-size: 12px;
+  }
+  
+  .cityListBlock .addCity button {
+    width: 100px;
+    height: 34px;
+    border-radius: 10px;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #2d93a1;
+    background: #2d93a1;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+  }
+  
+  .cityTableList table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  .cityTableList table th {
+    font-weight: 500;
+    color: #333333a3;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .cityTableList table td {
+    padding: 15px 15px;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .cityTableList {
+    margin: 30px 0 0;
+  }
+  
+  .cityTableList table tr td:nth-child(3) {
+    text-align: right;
+    border-radius: 0 15px 15px 0px;
+  }
+  .cityTableList table tr td:nth-child(1) {
+    border-radius: 15px 0 0 15px;
+  }
+  .cityTableList table tr td:nth-child(3) button {
+    border: 0;
+    color: #89909187;
+  }
+  
+ 
+  
+  .cityTableList table tr {
+    border-bottom: 10px solid #dff1f3;
+  }
+  
+  .cityTableList table tr td:nth-child(3) button:hover {
+    color: #861010;
+  }
+  
+  .cityTableList table tr td:hover {
+    color: #2d93a1;
+  }
+  @media screen and (max-width: 767px) {
+    .cityListArea .cityListBlock {
+      width: 90%;
+      padding: 20px;
+    }
+    .cityListBlock .title {
+      flex-wrap: wrap;
+    }
+    .cityListBlock .title h4 {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+    }
+  
+    .cityListBlock .title .rightSearch {
+      width: 100%;
+      margin: 20px 0 0;
+    }
+    .cityListBlock .searchInput input {
+      min-width: auto;
+      width: 100%;
+    }
+    .weatherDetailsBox {
+      width: 100%;
+      padding: 15px;
+      background: #3e99a6;
+    }
+    .my-row {
+      flex-wrap: wrap-reverse;
+    }
+    .my-col-7,
+    .my-col-5 {
+      width: 100%;
+    }
+    .weatherDetailsBox:after {
+      content: "";
+      display: none;
+    }
+    .popupArea {
+      background: #dff1f3;
+      padding: 20px;
+    }
+    .weatherDetailsBox .cel h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 100;
+      font-family: system-ui;
+    }
+    .bottomData img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cityListArea .cityListBlock {
+      width: 80%;
+      padding: 20px;
+    }
+    .popupArea {
+      background: #dff1f3;
+      padding: 20px;
+    }
+    .weatherDetailsBox {
+      width: 90%;
+      padding: 15px;
+      background: #3e99a6;
+    }
+  }
